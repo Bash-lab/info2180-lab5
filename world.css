@@ -1,1 +1,183 @@
 /* Add your own styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(18, 27, 34, 0.7), rgba(18, 27, 34, 0.5)), 
+                url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2670&auto=format&fit=crop');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh; 
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    /* Since links are gone, this just keeps the logo on the left */
+    justify-content: flex-start; 
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #ff5a5f; /* The orange/red accent color */
+}
+
+/* Hero Content (Center Text) */
+.hero-content {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+
+.cursive-text {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    color: #00e676; /* The neon green color */
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* Search Box Styling - The "Pill" Shape */
+.search-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+input[type="search"] {
+    flex: 1; /* Takes up remaining space */
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 50px 0 0 50px;
+    color: #555;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    padding-right: 5px;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#lookup {
+    background-color: #ff5a5f; /* Primary Red/Orange */
+    color: white;
+}
+
+#lookup:hover {
+    background-color: #ff333a;
+}
+
+#lookup-cities {
+    background-color: #333; /* Dark Grey for secondary action */
+    color: white;
+}
+
+#lookup-cities:hover {
+    background-color: #000;
+}
+
+/* Main Section (Results) */
+main {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    font-family: 'Satisfy', cursive;
+    color: #ff5a5f;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Table Styles (Matching the clean look) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+thead tr {
+    background-color: #ff5a5f;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+td:empty::before {
+    content: "-";
+    color: #ccc;
+}

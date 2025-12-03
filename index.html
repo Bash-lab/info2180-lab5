@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta charset="utf-8">
-		<title>World Database Lookup</title>
+<head>
+    <meta charset="utf-8">
+    <title>World Database Lookup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="world.css" type="text/css" rel="stylesheet" />
+    <script src="world.js" type="text/javascript"></script>
+</head>
+<body>
 
-		<!-- you can modify this as needed or to your preference -->
-		<link href="world.css" type="text/css" rel="stylesheet" />
+    <div class="hero">
+        
+        <nav>
+            <div class="logo">World<span>Listing</span></div>
+        </nav>
 
-		<!-- you write this -->
-		<script src="world.js" type="text/javascript"></script>
-	</head>
+        <div class="hero-content">
+            <p class="cursive-text">Explore the world</p>
+            <h1>Discover Great Places</h1>
+            
+            <div id="controls" class="search-box">
+                <input id="country" type="search" name="country" placeholder="What are you looking for?" />
+                <div class="button-group">
+                    <button id="lookup">Search</button>
+                    <button id="lookup-cities">Cities</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<body>
-		<header>
-			<h1>World Database Lookup</h1>
-		</header>
+    <main>
+        <div class="section-title">
+            <p>Search Results</p>
+            <h2>Database Information</h2>
+        </div>
+        
+        <div id="result">
+            </div>
+    </main>
 
-		<main>
-			<div id="controls">
-				<label for="country">Country:</label>
-				<input id="country" type="search" name="country" placeholder="Enter country name" />
-				<button id="lookup">Lookup</button>
-			</div>
-			
-			<div id="result">
-				<!-- countries will appear here -->
-			</div>
-		</main>
-
-	</body>
+</body>
 </html>
